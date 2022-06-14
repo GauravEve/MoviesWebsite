@@ -1,0 +1,172 @@
+body {
+  background-image: url("/images/image1.jpg");
+  background-repeat: no repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.background1 {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-image: url("/images/background1.jpg");
+  background-repeat: no repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.background2 {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-image: url("/images/background2.jpg");
+  background-repeat: no repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.background3 {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-image: url("/images/background3.jpg");
+  background-repeat: no repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#signOut {
+  float: right;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(202, 134, 134));
+  border: 4px solid black;
+  font-size: 15px;
+}
+button:hover {
+  background: black;
+}
+h1 {
+  margin-bottom: 20px;
+  background-image: linear-gradient(#666699, #000000);
+  color: black;
+  font-size: 300%;
+  text-align: center;
+  margin-left: -50px;
+  margin-right: -50px;
+}
+
+h2 {
+  color: black;
+  margin-left: 50px;
+  font-family: serif;
+  font-size: 300%;
+  margin-bottom: 80px;
+  margin-top: 1rem;
+}
+h2 span {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(202, 134, 134));
+  border-bottom: 2px solid black;
+}
+h3 {
+  color: black;
+  font-family: serif;
+  font-size: 200%;
+}
+h3 span {
+  background-image: linear-gradient(rgba(250, 0, 0, 0), rgba(250, 0, 0, 1));
+  border-bottom: 2px solid black;
+}
+
+img {
+  opacity: 0.9;
+
+  margin-right: 10px;
+
+  height: 400px;
+  width: 400px;
+}
+p {
+  color: rgba(178, 174, 245, 0.719);
+}
+.sideright {
+  padding-left: 10px;
+  background-image: linear-gradient(
+    to left,
+    rgba(250, 0, 0, 0),
+    rgba(250, 0, 0, 0.5)
+  );
+  width: 400px;
+  height: 400px;
+  float: right;
+}
+.sideleft {
+  height: 400px;
+  background-color: black;
+
+  margin-right: 20px;
+  float: left;
+  margin-bottom: 50px;
+}
+.synopsis {
+  margin-left: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgba(250, 0, 0, 0),
+    rgba(250, 0, 0, 1)
+  );
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 120%;
+  color: white;
+  opacity: 1;
+  margin-bottom: 50px;
+}
+
+.container {
+  color: white;
+  margin-left: 100px;
+}
+.card-body {
+  padding: 2px;
+  margin: 10px;
+  height: 100px;
+  width: 300px;
+  text-align: center;
+  color: white;
+  border: white solid 2px;
+  background-color: black;
+}
+
+.card-text {
+  margin: 0px;
+  /* width: 50%; */
+  /* text-align: center; */
+  /* text-overflow: scroll; */
+  /* text-align: justify; */
+}
+.card-title {
+  margin: 0px;
+  /* text-align: center; */
+  /* text-align: justify; */
+}
+.star{
+  color: goldenrod;
+  font-size: 2.0rem;
+  padding: 0 1rem; /* space out the stars */
+}
+.star::before{
+  content: '\2606';    /* star outline */
+  cursor: pointer;
+}
+.star.rated::before{
+  /* the style for a selected star */
+  content: '\2605';  /* filled star */
+}
+
+.stars{
+    counter-reset: rateme 0;   
+    font-size: 2.0rem;
+    font-weight: 900;
+}
+.star.rated{
+    counter-increment: rateme 1;
+}
+.stars::after{
+    content: counter(rateme) '/5';
+}

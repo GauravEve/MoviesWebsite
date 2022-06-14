@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<title>Anime List</title>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="/css/style.css">
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script> -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+</head>
+<body>
+	<h1>ANIME LIST</h1>
+	<button id="signOut">Logout</button>
+	<div class="background1">
+<center>
+
+<h2><span>DEMON SLAYER</span></h2>
+</center>
+
+<div class ="sideright">
+	<h3><span>Information</span></h3>
+	<p>Type: TV
+Episodes: 26<br>
+Status: Finished Airing<br>
+Aired: Apr 6, 2019 to Sep 28, 2019<br>
+Premiered: Spring 2019<br>
+Broadcast: Saturdays at 23:30 (JST)<br>
+Producers: Aniplex, Shueisha<br>
+Licensors: Aniplex of America<br>
+Studios: ufotable<br>
+Source: Manga<br>
+Genres: Action, Demons, Historical, Shounen, Supernatural<br>
+Duration: 23 min. per ep.<br>
+Rating: R - 17+ (violence & profanity)<br>
+</p>
+</div>
+<div class ="sideleft">
+	<center>
+	<h3><span>TRAILER</span></h3>
+</center>
+	<iframe width="400" height="315" src="https://www.youtube.com/embed/VQGCKyvzIM4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<center>
+<img src="/images/demon slayer.jpg"/>
+</center>
+
+<div class="synopsis">
+	<p>Ever since the death of his father, the burden of supporting the family has fallen upon Tanjirou Kamado's shoulders. Though living impoverished on a remote mountain, the Kamado family are able to enjoy a relatively peaceful and happy life. One day, Tanjirou decides to go down to the local village to make a little money selling charcoal. On his way back, night falls, forcing Tanjirou to take shelter in the house of a strange man, who warns him of the existence of flesh-eating demons that lurk in the woods at night.
+
+When he finally arrives back home the next day, he is met with a horrifying sight—his whole family has been slaughtered. Worse still, the sole survivor is his sister Nezuko, who has been turned into a bloodthirsty demon. Consumed by rage and hatred, Tanjirou swears to avenge his family and stay by his only remaining sibling. Alongside the mysterious group calling themselves the Demon Slayer Corps, Tanjirou will do whatever it takes to slay the demons and protect the remnants of his beloved sister's humanity.</p>
+	
+</div>
+
+	
+	<div class="container">
+		<details>
+			<summary style="color:white">Comments</summary>
+			
+			<form id="comments0">
+				<div class="mb-3">
+					<label for="name0" class="form-label">Name</label>
+					<input id="name0" name="name" type="text" class="form-control">
+				</div>
+				<div class="mb-3">
+					<label for="comment0" class="form-label">Write a Comment</label>
+					<textarea id="comment0" name="comment" class="form-control"></textarea>
+				
+				<button class="btn btn-outline-primary">Post Comment</button>
+				<div class="container cont0">
+		
+				</div>
+			</form>	
+			
+		</details>
+		</div>
+
+</div>
+</div>
+<div class="background2">
+<center>
+<h2><span>ATTACK ON TITAN</span></h2>
+</center>
+<div class ="sideright">
+	<h3><span>Information</span></h3>
+	<p>Type: TV<br>
+Episodes: 25<br>
+Status: Finished Airing<br>
+Aired: Apr 7, 2013 to Sep 29, 2013<br>
+Premiered: Spring 2013<br>
+Broadcast: Sundays at 01:58 (JST)<br>
+Producers: Production I.G, Dentsu, Mainichi Broadcasting System, Pony Canyon, Kodansha, Mad Box, Pony Canyon Enterprise<br>
+Licensors: Funimation<br>
+Studios: Wit Studio<br>
+Source: Manga<br>
+Genres: Action, Military, Mystery, Super Power, Drama, Fantasy, Shounen<br>
+Duration: 24 min. per ep.<br>
+Rating: R - 17+ (violence & profanity)<br>
+
+</p>
+</div>
+<div class ="sideleft">
+	<center>
+	<h3><span>TRAILER</span></h3>
+	<iframe width="400" height="310" src="https://www.youtube.com/embed/MGRm4IzK1SQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<center>
+	<img src="/images/attack on titan.jpg"/>
+
+</center>
+
+<div class="synopsis">
+	<p>Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter. However, that fragile calm is soon shattered when a colossal titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations.
+
+After witnessing a horrific personal loss at the hands of the invading creatures, Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls. Based on Hajime Isayama's award-winning manga, Shingeki no Kyojin follows Eren, along with his adopted sister Mikasa Ackerman and his childhood friend Armin Arlert, as they join the brutal war against the titans and race to discover a way of defeating them before the last walls are breached.
+</p>
+	
+</div>
+<div class="container">
+	<details>
+		<summary style="color:white">Comments</summary>
+		
+		<form id="comments1">
+			<div class="mb-3">
+				<label for="name" class="form-label">Name</label>
+				<input id="name1" name="name" type="text" class="form-control">
+			</div>
+			<div class="mb-3">
+				<label for="comment" class="form-label">Write a Comment</label>
+				<textarea id="comment1" name="comment" class="form-control"></textarea>
+			</div>
+			<div class="stars" data-rating="3">
+				<span class="star">&nbsp;</span>
+				<span class="star">&nbsp;</span>
+				<span class="star">&nbsp;</span>
+				<span class="star">&nbsp;</span>
+				<span class="star">&nbsp;</span>
+			</div>
+			<button class="btn btn-outline-primary">Post Comment</button>
+			<div class="container cont">
+	
+			</div>
+		</form>	
+		
+	</details>
+	</div>
+	
+
+</div>
+
+
+<div class="background3">
+<center>
+<h2><span>MY HERO ACADEMY</span></h2>
+</center>
+<div class ="sideright">
+	<h3><span>Information</span></h3>
+	<p>Type: TV<br>
+Episodes: 25<br>
+Status: Finished Airing<br>
+Aired: Apr 7, 2013 to Sep 29, 2013<br>
+Premiered: Spring 2013<br>
+Broadcast: Sundays at 01:58 (JST)<br>
+Producers: Production I.G, Dentsu, Mainichi Broadcasting System, Pony Canyon, Kodansha, Mad Box, Pony Canyon Enterprise<br>
+Licensors: Funimation<br>
+Studios: Wit Studio<br>
+Source: Manga<br>
+Genres: Action, Military, Mystery, Super Power, Drama, Fantasy, Shounen<br>
+Duration: 24 min. per ep.<br>
+Rating: R - 17+ (violence & profanity)<br>
+
+</p>
+</div>
+<div class ="sideleft">
+	<center>
+	<h3><span>TRAILER</span></h3>
+	<iframe width="400" height="310" src="https://www.youtube.com/embed/EPVkcwyLQQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<center>
+	<img src="/images/my hero academia.jpg"/>
+
+</center>
+
+<div class="synopsis">
+	<p>Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter. However, that fragile calm is soon shattered when a colossal titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations.
+
+After witnessing a horrific personal loss at the hands of the invading creatures, Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls. Based on Hajime Isayama's award-winning manga, Shingeki no Kyojin follows Eren, along with his adopted sister Mikasa Ackerman and his childhood friend Armin Arlert, as they join the brutal war against the titans and race to discover a way of defeating them before the last walls are breached.
+</p>
+	
+</div>
+</div>
+
+<script src="/signOut.js"></script>
+<script src="/firebase.js"></script>
+<script src="/comment.js"></script>
+<script src="/commentsTop.js"></script>
+
+
+
+</body>
+</html>
